@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>oasis forever</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.7">
+
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Roboto:100,300,400,500,700,900|Roboto+Condensed:300,400,700&display=swap&subset=korean" rel="stylesheet">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta property="og:title" content="oasisforever" >
+	<meta property="og:description" content="밴드 오아시스를 소개하는 사이트입니다." >
+	<meta property="og:type" content="website" >
+	<meta property="og:url" content="https://hihithnx.github.io/oasisfinal/" >
+	<meta property="og:image" content="thumbnail.png">
+
+
+
+
+	<style>
+	
+
+		h1,h2,h3,h4,p {  font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif; font-family: 'Roboto Condensed', sans-serif;
+					}
+		.wrap{ width:1920px;  margin:auto; position: relative}
+
+		.bor{border-left: 2px solid white; height: 100px; position: absolute;}
+
+		
+
+		.cover1{background-size:100% auto; width: 1920px; height: 950px; background-color:rgba(0,0,0,.7);
+     			opacity:0.6;
+     			transition:opacity 0.8s;overflow:hidden;}
+		.cover1:hover{opacity: 1;}
+
+		.cover2{background-size:100% auto; width: 1920px; height: 1150px; background-color:rgba(0,0,0,.7);
+     			opacity:0;
+     			transition:opacity 0.8s;overflow:hidden;}
+		.cover2:hover{opacity: 1;}
+
+		.cover3{background-size:100% auto; width: 1920px; height: 1080px; background-color:rgba(0,0,0,.5);
+     			opacity:0;
+     			transition:opacity 0.8s;overflow:hidden;}
+		.cover3:hover{opacity: 1;}
+     	
+
+
+
+		#youtube a{background-color:rgba(0,0,0,.10);
+     width:100%;
+     height:100%;
+    
+     opacity:1;
+     transition:opacity 0.8s;}
+
+     	#youtube a:hover{ opacity:0.5;}
+
+
+		#youtube1 a{background-color:rgba(0,0,0,.10);
+     opacity:1;
+     transition:opacity 0.8s;}
+
+     	#youtube1 a:hover{ opacity:0.5;}
+
+
+		#youtube2 a{background-color:rgba(0,0,0,.10);
+     width:100%;
+     height:100%;
+    
+     opacity:1;
+     transition:opacity 0.8s;}
+
+     	#youtube2 a:hover{ opacity:0.5;}
+
+
+
+
+     	#footbor{border-top: 3px solid white; width: 1400px; position: absolute;}
+
+		
+		/*ul{ width: 1000px;
+		list-style: none; margin: 0; padding: 0; overflow: hidden; margin: auto;}
+		li{float: left; }
+		li a{padding: 14px 16px; display: inline-block; text-decoration: none; color: white;}
+		li a:hover{transform: scale(1.2); transition: all 0.8s;  color: black; background-color: white;}
+		li a:visited{color: white;} */
+
+
+		
+		ul {position: fixed; list-style-type: none; margin: 0; padding: 0; overflow: hidden;}
+		li { float: left;}
+		li a {display: block; color: white; text-align: center; padding: 14px 16px;
+           text-decoration: none; font-weight: bold; font-family: 'Roboto', sans-serif;}
+        li a:hover { transform: scale(1.2); transition: all 0.8s; }
+        li a:visited{color: white;}
+
+
+
+
+
+
+		h2,h3,h4,p{ position: absolute; }
+
+		h2,h3,h4{line-height: 1.58;}
+
+		
+		
+
+		header h2{top:220px;left:800px; color: white; font-family:'Roboto Condensed', sans-serif; font-weight: 600;  font-size: 4em;}
+		header p{top: 553px;left:545px; color: white; font-weight:  400; font-size: 1.7em; text-align: center; line-height: 1.58; }
+
+		/*contents1*/
+	
+		#contents1 p{font-size: 1.6em; font-weight:  400; color: white; line-height: 1.58; text-align: center;}
+		#contents1 h2{font-size: 2.6em; color: white; background:; }
+		#contents1 h3{font-size: 3em; font-weight: 700; color: white; background:;}
+		#contents1 #h3{ top:360px; left:820px; }
+		#contents1 #p1{ top:365px; left:870px; }
+		#contents1 #h2{ top:465px; left:520px; }
+		#contents1 #p2{ top:800px; left:640px; }
+		#contents1 #bor{top: 630px; left: 955px;}
+
+
+		#contents2 h2{font-size: 3em; font-weight: 700; color: white; background:; }
+		#contents2 #h2{ top:100px; left:870px; }
+		#contents2 #bor{top: 220px; left: 955px;}
+
+		#contents3 h2{font-size: 3em; font-weight: 700; color: white; background:; }
+		#contents3 p{font-size: 1em; font-weight: 300; color: white; font-style: italic;}
+
+		#contents3 #h2{ top:35px; left:880px; }
+		#contents3 #p1{ top: 510px; left: 510px; }
+		#contents3 #p2{ top: 510px; left: 740px; }
+		#contents3 #p3{ top: 510px; left: 970px;}
+		#contents3 #p4{ top: 510px; left: 1200px;}
+
+		#contents3 #p5{ top: 860px; left: 510px; }
+		#contents3 #p6{ top: 860px; left: 740px; }
+		#contents3 #p7{ top: 860px; left: 970px; }
+		#contents3 #p8{ top: 860px; left: 1200px; }
+
+		#contents3 #bor{top: 150px; left: 955px;}
+
+
+
+		#contents4 p{font-size: 1.6em; font-weight:  400; color: white; line-height: 1.58; text-align: center;}
+		#contents4 h2{font-size: 3em; color: white; font-weight: 700; background:; }
+		#contents4 h3{font-size: 4.5em; font-weight: 700; color: white; background:;}
+		#contents4 #h2{ top:200px; left:875px; }
+		#contents4 #h3{ top:410px; left:790px; }
+		#contents4 #p1{ top:510px; left:1135px; }
+		#contents4 #p2{ top:620px; left:595px; }
+		#contents4 #bor{top: 330px; left: 955px;}
+
+
+		#contents5 h2{font-size: 9em; font-weight: 600; color: white; font-family:'Roboto Condensed', sans-serif;  }
+		#contents5 h3{font-size: 8em; font-weight: 300; color: white;  font-family: 'Roboto', sans-serif; }
+		#contents5 #h2{ top:400px; left:550px; }
+		#contents5 #h3{ top:270px; left:565px; }
+
+		#contents6 p{font-size: 1.3em; font-weight:  400; color: white; line-height: 1.48; text-align: left;}
+		#contents6 h2{font-size: 3em; color: white; font-weight: 700; background:; }
+		#contents6 h3{font-size: 2em; font-weight: 700; color: white; background:;}
+		#contents6 h4{font-size: 2em; font-weight: 700; color: white; background:;}
+		#contents6 #h2{ top:50px; left:630px; }
+		#contents6 #h3{ top:685px; left:580px; }
+		#contents6 #h4{ top:675px; left:1210px; }
+		#contents6 #p1{ top:280px; left:630px; }
+		#contents6 #p2{ top:745px; left:580px; }
+		#contents6 #p3{ top:745px; left:990px; text-align: right;}
+
+		#contents7 p{font-size: 1.3em; font-weight:  400; color: white; line-height: 1.5; text-align: left;}
+		#contents7 h2{font-size: 3em; color: white; font-weight: 700; background:; }
+		#contents7 #h2{ top:150px; left:1010px; }
+		#contents7 #p{ top:265px; left:1010px; }
+
+
+		#contents8 p{font-size: 1.4em; font-weight:  100; color: white; line-height: 1.48; text-align: center;}
+		#contents8 h2{font-size: 3em; color: white; font-weight: 700; background:; }
+		#contents8 h3{font-size: 2em; font-weight: 500; color: white; line-height: 1.2; text-align: center;}
+		#contents8 h4{font-size: 1.6em; font-weight: 400; color: white; line-height: 1.6; text-align: center;}
+		#contents8 a{background-size: cover;}
+
+		#contents8 #h2{ top:50px; left:885px; }
+		#contents8 #h3{ top:390px; left:830px; }
+		#contents8 #h4{ top:700px; left:630px; }
+		#contents8 #p1{ top:530px; left:660px; }
+		#contents8 #p2{ top:970px; left:600px; }
+		#contents8 #youtube{position: absolute;  top: 1420px; left: 930px; }
+		#contents8 #bor{top: 180px; left: 955px;}
+		
+
+
+
+		#contents9 p{font-size: 1.4em; font-weight:  100; color: black; line-height: 1.48; text-align: center;}
+		
+		#contents9 h3{font-size: 2em; font-weight: 500; color: black; line-height: 1.2; text-align: center;}
+		#contents9 h4{font-size: 1.6em; font-weight: 400; color: black; line-height: 1.6; text-align: center;}
+		
+		#contents9 #h3{ top:60px; left:830px; }
+		#contents9 #h4{ top:300px; left:630px; }
+		#contents9 #h4-1{ top:730px; left:600px; }
+		#contents9 #p1{ top:150px; left:690px; }
+		#contents9 #p2{ top:490px; left:600px; }
+		#contents9 #youtube1{position: absolute;  top: 1120px; left: 920px; }
+
+
+		#contents10 p{font-size: 1.4em; font-weight:  100; color: white; line-height: 1.48; text-align: center;}
+		#contents10 h3{font-size: 2em; font-weight: 500; color: white; line-height: 1.2; text-align: center;}
+		#contents10 h4{font-size: 1.6em; font-weight: 400; color: white; line-height: 1.6; text-align: center;}
+		#contents10 #h3{ top:150px; left:880px; }
+		#contents10 #h4{ top:430px; left:630px; }
+		#contents10 #p{ top:260px; left:810px; }
+		#contents10 #youtube2{position: absolute;  top: 860px; left: 920px; }
+
+
+
+
+		#contents11 p{font-size: 1.6em; font-weight:  400; color: white; line-height: 1.6; text-align: center;}
+		#contents11 h2{font-size: 3em; color: white; font-weight: 700; background:; }
+		#contents11 h3{font-size: 2em; font-weight: 500; color: white; line-height: 1.2; text-align: center;}
+		#contents11 #h2{ top:100px; left:917px; }
+		#contents11 #h3{ top:410px; left:860px; }
+		#contents11 #p{ top:510px; left:630px; }
+		#contents11 #bor{top: 220px; left: 955px;}
+
+		#contents12 h2{font-size: 10em; font-weight: 700; color: white;  font-family: 'Roboto Condensed', sans-serif;}
+		#contents12 #h2{ top:300px; left:550px; }
+		
+
+		#contents13 h2{position: absolute; color: white; font-family: 'Roboto' sans-serif; font-size: 1em;}
+		#contents13 h2 a{padding: 5px; text-decoration: none; transition: 0.8s; color: white;}
+		#contents13 h2 a:visited{color: white;}
+		#contents13 h2 a:hover{background-color: white;opacity: 0.7; color: black;}
+		#contents13 h3 {position: absolute; color: white; font-weight:300; }
+		#contents13 h3 a {text-decoration: none; color: white; }
+		#contents13 h3 a:visited{color: white;}
+
+		#contents13 p{ position: absolute; text-align: left; color: white; font-family: 'Roboto', sans-serif; line-height: 1.3;}
+
+
+		#contents13 #f1{top: 1190px;left: 655px;}
+		#contents13 #f2{top: 1190px; left: 740px;}
+		#contents13 #f3{top: 1190px; left: 830px;}
+		#contents13 #f4{top: 1230px; left: 655px;}
+		#contents13 #f5{top: 1230px; left: 740px;}
+		#contents13 #f6{top: 1230px; left: 855px;}
+		#contents13 #f7{top: 1230px; left: 922px;}
+		#contents13 #f8{top: 1190px; left: 1550px;}
+
+		#contents13 #p1{font-size: 0.9em; top:1290px;left: 655px; font-weight: 300;}
+		#contents13 #p2{font-size: 0.7em; top: 1370px; left: 655px; font-weight: 100;}
+
+	
+
+
+
+		
+		
+
+
+
+		
+		#back1{ background: url('oagif.gif'); background-size:100% auto; height:920px; }
+     	
+		#back2{ background: url('sec2-1.png'); background-size:100% auto; height:1413px;}
+		#back3{ background: url('sec3-1.png'); background-size:100% auto; height:1080px;}
+		#back4{ background: url('sec4-2.png'); background-size:100% auto; height:1150px;}
+		#back5{ background: url('foot.gif'); background-size:100% auto; height:1150px;}
+		#back5cover{position:relative;
+     overflow:hidden;
+     width:1920px;
+     height:1150px;}
+     	/*#back5cover:hover{opacity: 0.8; transform: scale(1.06 ); transition: all 0.8s;}
+     	#back5cover{background-size:100% auto; width: 1920px; height: 1150px; background-color:rgb(0.0.10);
+     			opacity:1;
+     			transition:opacity 0.8s;overflow:hidden;}*/
+		#back6{ background: url('sec6.png'); background-size:100% auto; height:1080px; }
+		#back7{ background: url('sec7.png'); background-size:100% auto; height:1080px;}
+		#back8{ background: url('sec8.png'); background-size:100% auto; height:1080px;}
+		#back8-1{ background: url('sec9.png'); background-size:100% auto; height:1080px;}
+		#back8-2{ background: url('sec10.png'); background-size:100% auto; height:1521px;}
+		#back9{ background: url('sec11-1.png'); background-size:100% auto; height:1601px;}
+		#back10{ background: url('sec12-1.png'); background-size:100% auto; height:1280px;}
+		#back11{ background: url('sec13-1.png'); background-size:100% auto; height:1150px;}
+		#back12{ background: url('sec5-1.png'); background-size:100% auto; height:1080px;}
+		#back13{ background: url('oagif1.gif'); background-size:100% auto; height:1070px; }
+	
+		#back14{ background: url('foot.png'); background-size:100% auto; height:1500px;}
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+
+		<!--네비 -->
+
+	
+		<ul style="width:830px; height:100px; background:; z-index: 9999; left:100px;">
+			<li style="margin-right: 25px;"><a style="padding: 2px;" href="#back1"><div style="width: 70px; height: 33px; padding: 2px; background-size: cover;"><img src="oasisnav.png" width="70" height="33"></div></a></li>
+			<li><a href="#contents1">STORY  </a></li>
+			<li><a href="#contents2">MEMBER </a></li>
+			<li><a href="#contents3">ALBUM  </a></li>
+			<li><a href="#contents4">RECORD </a></li>
+			<li><a href="#contents5">GALLAGHERS  </a></li>
+			<li><a href="#contents8">MUSIC  </a></li>
+			<li><a href="#contents11">END  </a></li>
+			<li style="margin-left: 5px;"><a style="padding-top: 8px; width: 42px; height: 30px;" target="_blank" href="https://www.youtube.com/user/OasisVEVO/featured" style = "padding: 6px;"><img src="youtubenav.png" width="40" height="28">
+			</a></li>
+		</ul>
+	
+
+
+
+
+	<header >
+		<div class="wrap" id="back1">
+
+			<div class="cover1"></div>
+
+			<h2>1994 - 2009</h2>
+			
+			<p>1990년대 초반부터 오아시스는 8개의 앨범에 걸쳐 수많은 노래를 녹음했다.<br>
+ 			그들은 한 세대를 정의했고 계속해서 전세계 음악가들에게 영향을 미치고 있다. <br>
+			그들은 2009년에 떠났지만, 그들의 노래는 계속될 것이다.</p>
+
+			
+			
+		</div>
+	</header>
+
+	<section id="contents1">
+		<div class="wrap" id="back2">
+			<p id="p1">UNITED KINGDUM</p>
+			<h3 id="h3">MANCHESTER</h3>
+			<h2 id="h2">영국 맨체스터 빈민가에서 시작된 밴드 오아시스 이야기</h2>
+			<p id="p2">90년대 영국 밴드음악의 대표인 오아시스는 많은 가십거리를 낳은<br>
+			   거칠고 과격한 말과 행동에 비해 단순한 코드와 긍정적인 가사를<br>
+			   이용해 항상 밝고 서정적인 분위기의 곡을 연주하였다.   <br>
+			   그들의 노래는 지금까지 수많은 사람들의 마음을 울리고 있다. </p>
+
+			<div id="bor" class="bor"></div>
+			
+		</div>
+	</section>
+	<section id="contents2">
+		<div class="wrap" id="back3">
+			<h2 id="h2">MEMBER</h2>
+
+			<div id="bor" class="bor"></div>
+
+
+			
+		</div>
+	</section>
+	<section id="contents3">
+		<div class="wrap" id="back4">
+			<h2 id="h2">ALBUM</h2>
+			<p id="p1">#1<br><br>
+			Definitely Maybe</p>
+			<p id="p2">#2<br><br>
+			(What's the story) <br>
+			Morning Glory?</p>
+			<p id="p3">#3<br><br>
+			Be Here Now</p>
+			<p id="p4">#B-side <br><br>
+			The Masterplan</p>
+			<p id="p5">#4<br><br>
+			Standing on the <br>
+			Shoulder of Giants</p>
+			<p id="p6">#5 <br><br>
+			Heathen Chemistry</p>
+			<p id="p7">#6<br><br>
+			Don't Believe the Truth</p>
+			<p id="p8">#7<br><br>
+			Dig Out Your Soul</p>
+
+			<div id="bor" class="bor"></div>
+			
+		</div>
+	</section>
+	<section id="contents4">
+		<div class="wrap" id="back5">
+
+			<div class="cover2">
+
+			<h2 id="h2">RECORD</h2>
+			<h3 id="h3">75,000,000</h3>
+			<p id="p1">장 이상의 앨범 판매량</p>
+			<p id="p2">Brit Awards, MTV, NME, Q로부터 30개 이상의 상을 받았다. <br>
+					   영국에서 가장 빨리 팔리는 데뷔 앨범, 곧 이어 영국에서 가장 빨리 팔리는 <br>
+					   앨범, 22회 연속 Top 10로써 기네스북에 올랐다. </p>
+
+			</div>
+
+			<div id="bor" class="bor"></div>
+
+		</div>		   
+			
+	
+
+	
+	</section>
+	<section id="contents5">
+		<div class="wrap" id="back6">
+			<h3 id="h3">NOEL & RIAM</h3>
+			<h2 id="h2">GALLAGHERS</h2>
+			
+		</div>
+	</section>
+	<section id="contents6">
+		<div class="wrap" id="back7">
+			<h2 id="h2">갤러거 형제</h2>
+			<p id="p1">어린시절 아버지한테 학대를 자주 당했다.<br>
+					   어머니와 형제들과 집을 나와 따로 지내게 되었다.<br>
+					   힘든 어린시절에도 불구하고 긍정주의자로서<br>
+					   곡들의 분위기와 가사들이 밝고 희망차다. <br><br>
+					   서로를 쓰레기라 부르며 욕하지만 속으로는<br>
+					   서로를 위해주며 의지한다.하지만 계속된<br>
+					   불화로 인해 밴드를 해체하게 된다. </p>
+			<h3 id="h3">노엘 갤러거</h3>
+			<p id="p2">기타 세션, 작곡 및 총괄 프로듀서 <br>
+						보컬로도 활동 <br>
+						동생과는 애증의 관계	<br>
+						맨체스터시티 광팬</p>		
+			<h4 id="h4">리암 갤러거</h4>
+			<p id="p3"> 메인보컬<br>
+						맑은 목소리였으나 술과 담배로 목소리가 변함<br>
+						영국의 악동<br>
+						형이랑 싸운 후 밴드 해체</p>
+
+			
+		</div>
+	</section>
+	<section id="contents7">
+		<div class="wrap" id="back8">
+			<h2 id="h2">형제의 말!말!말!</h2>
+			<p id="p">갤러거 형제의 거침없는 말과 행동은 많은 가십거리를 낳았다.<br> 
+					  이러한 모습이 오아시스를 더욱더 유명하게 만든것 아닐까?  </p>
+			
+		</div>
+	</section>
+	<section>
+		<div class="wrap" id="back8-1">
+			
+		</div>
+	</section>
+	<section>
+		<div class="wrap" id="back8-2">
+			
+		</div>
+	</section>
+	<section id="contents8">
+		<div class="wrap" id="back9">
+			<h2 id="h2">MUSIC</h2>
+			<h3 id="h3">So sally can wait? <br>
+						여전히 기다리는 샐리 </h3>
+			<p id="p1">So sally can wait, She knows its too late as we're walking on by.<br>
+					   Her soul slides away, but don't look back in anger, I heard you say<br><br>
+					   - Don't Look Back In Anger의 가사 중</p>
+			<h4 id="h4">이 노래는 오아시스를 잘 모르더라도 어디선가 들어봤을 것이다.<br>
+						이 곡은 기타를 맡고있는 노엘이 부른 곡이며 브릿팝 사운드가 <br>
+						특징이다. 그만큼 오아시스를 대표하는 곡중 하나이며, 내한공연때도 <br>
+						연주되었다. 노래 구절중 so sally can wait 이라는 가사가 계속 <br>
+						등장하는데 샐리가 도대체 누구길래 기다릴 수 있다고 하는것일까?</h4>
+			<p id="p2">I don't actually know anybody called Sally. It's just a word that fit.<br>
+					   나는 샐리라는 이름을 가진 어떤 사람도 몰라, 그냥 (노래에) 맞는 단어일 뿐이야<br>
+					   <br>
+					   그 노래(Don't Look Back In Anger)를 위한 코드가 있었고, 작곡을 시작했지. <br>
+					   나는 어쿠스틱 기타로 스트러밍을 하고 있었고, 그때 우리 애(리암 갤러거)가 말했어,<br>
+					   "지금 뭘 부른거야?" 나는 노래를 부르고 있지 않았어, 그냥 곡을 만들고 있는 거였지. <br>
+					   그러더니 우리 애는 말했어, "'So Sally can wait'이라고 부른 거야?". 나는 속으로 <br>
+					   '그거 좋은데!'라고 생각했지 그래서 나는 'So Sally Can wait.'이라고 노래했고, <br>
+					   드레싱룸에 가서 그 곡을 쓴거야.<br>
+					   <br>
+					   - 노엘 갤러거, 2007년 8월 영국잡지 Uncut</p>
+
+					   <div id="youtube" >
+					   	<a style="width: 80px;height: 50px;" target="_blank" href="https://youtu.be/r8OipmKFDeM"><img  src="youlogo-01.png"></a>
+
+					   </div>
+					   <div id="bor" class="bor"></div>
+			
+		</div>
+	</section>
+	<section id="contents9">
+		<div class="wrap" id="back10">
+			<h3 id="h3">원더월은 무엇일까?</h3>
+			<p id="p1">Because maybe you're gonna be the one that saves me<br>
+					   And after all, you're my wonderwall<br>
+					   <br>
+					    -Wonderwall 가사 중</p>
+			<h4 id="h4">원더월은 발매 당시 어디에서나 들리던 히트곡이였다. 이 노래 또한<br>
+						한국인들에게도 익숙한 곡이며, 단순한 코드로 쉽게 연주할 수 있다.<br>
+						또한 영화 마미에 삽입되어 화면의 전환을 이루며 감동을 준다.<br>
+						그렇다면 원더월이 무엇인가 알아보자!</h4>
+			<p id="p2">"It's about my girlfriend, Meg Matthews."<br>
+						(내 여자친구인 멕 매튜스에 관한 것이다.)<br>
+						- 노엘 갤러거, 멕과 교제할 당시, 1996년 NME<br>
+						<br>
+						"about an imaginary friend who's gonna come and save you from yourself."<br>
+						(와서 당신을 당신 자신으로부터 구해줄 어떤 상상의 친구에 관한 것이었다.)<br>
+						-노엘 갤러거, 메그와 이혼한 뒤, 2001년 BBC 라디오</p>
+			<h4 id="h4-1">기본적으로 '구원자', '가장 소중한 대상' 등의 의미를 담는다. '선망의 <br>
+						  대상','갈망의 대상' 등 말그대로 자기 자신에게 가장 의미가 큰 무언가 <br>
+						  혹은 누군가를 지칭한다. 그것은 사랑일 수도 있고 우정일 수도 있으며 <br>
+						  듣는 사람이 각자 자신만의 의미를 부여할 수 있다. 또한 노래에 나오는 <br>
+						  가사('You gonna be the one that saves me 네가 날 구원해줄 <br>
+						  단 한사람이야')처럼 자신을 구원해줄 누군가를 지칭하는 언어로써 <br>
+						  영화 마마의 내용과도 연관지어서 생각해볼 수 있다. </h4>
+
+						  <div id="youtube1" >
+					   	<a target="_blank" href="https://youtu.be/bx1Bh8ZvH84"><img  src="youlogo-01.png"></a>
+
+					   </div>
+			
+		</div>
+	</section>
+	<section id="contents10">
+		<div class="wrap" id="back11">
+			<h3 id="h3">Live forever</h3>
+			<p id="p">Maybe I don't really wanna know <br>
+					  You and I are gonna live forever <br>
+					  <br>
+					  -live forever 가사 중</p>
+			<h4 id="h4">이 곡은 노엘이 91년 건축회사에서 일을 할 때 발을 다쳐 사무직<br>
+						일을 하며 쓴 곡으로, 오아시스의 낙관주의적 특징을 잘 나타내는<br>
+						곡이다. 이 당시 많은 밴드들은 염세주의에 찌들어 있었는데 자신은 <br>
+						가정폭력을 당하며 힘들었던 어린 시절을 겪었음에도 불구하고 어둡고<br>
+						비관적인 곡은 만들지도 부르지도 않고 싶다며 밝고 낙관적인 분위기로<br>
+						쓴 곡이다. 많은 사람들의 찬사를 받았으며 오아시스를 나타내는 <br>
+						중요한 곡 중 하나이다.</h4>
+
+						  <div id="youtube2" >
+					   	<a target="_blank" href="https://youtu.be/TDe1DqxwJoc"><img  src="youlogo-01.png"></a>
+
+					   </div>
+			
+		</div>
+	</section>
+	<section id="contents11">
+		<div class="wrap" id="back12">
+			<h2 id="h2">END</h2>
+			<h3 id="h3">오아시스의 해체</h3>
+			<p id="p">갤러거 형제는 오아시스활동을 하면서도 서로 잘 싸웠는데 <br>
+					  결국엔 2009년 파리 공연 전에 사소한 싸움이 크게 번져 서로의 <br>
+					  기타를 부수게 되고, 그 이후에 안한다고 하며 밴드는 해체되었다. <br>
+					  오아시스가 해체된 후 많은 팬들은 아직까지 재결합을 기다리지만, <br>
+					  감감 무소식이라고 한다. 혜성처럼 나타나 90년대 영국과 전세계를 <br>
+					  강타한 오아시스는 크고 작은 이슈를 낳으며 활동을 했고, <br>
+					  많은 명곡들을 남겼으며, 그들만의 모습으로 멋있게 사라졌다. </p>
+
+					   <div id="bor" class="bor"></div>
+			
+		</div>
+	</section>
+	<section id="contents12">
+		<div class="wrap" id="back13">
+
+			<div class="cover3">
+
+			<h2 id="h2">BE HERE NOW</h2>
+
+		</div>
+			
+		</div>
+	</section>
+
+	<footer id="contents13">
+		<div class="wrap" id="back14">
+
+			<h2 id="f1"><a href="#contents1">STORY  </a></h2>
+			<h2 id="f2"><a href="#contents2">MEMBER </a></h2>
+			<h2 id="f3"><a href="#contents3">ALBUM  </a></h2>
+			<h2 id="f4"><a href="#contents4">RECORD </a></h2>
+			<h2 id="f5"><a href="#contents5">GALLAGHERS  </a></h2>
+			<h2 id="f6"><a href="#contents8">MUSIC  </a></h2>
+			<h2 id="f7"><a href="#contents11">END  </a></h2>
+
+			<h3 id="f8"><a href="#back1">TOP</a></h3>
+
+
+			
+
+	
+
+			
+
+			<p id="p1">From the early 1990’s Oasis recorded countless songs across their eight albums <br>
+			they defined a generation & continue to influence musicians around the globe. <br>
+			They departed in 2009 but their legacy will live on.
+				
+			</p>
+
+			
+
+			<p id="p2">copyright ⓒ2019 Hankyung National University Dept. of Design. <br> 
+			Digital Publishing by. YOHAN LIM
+				
+			</p>
+			
+			
+		</div>
+	</footer>
+
+
+
+</body>
+</html>
